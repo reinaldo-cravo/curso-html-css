@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* box-level */
+
+            
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            
+            /* ordem de atalhos: width - style - color*/
+            border: 10px solid darkslategray;
+
+            
+             /* ordem de atalhos: TOP - RIGHT - BOTTOM - LEFT. Se os 4 valors forem iguais só precisa usar 1. 2 valores = valor numero 1 = top e bottom valor nuemero2 = left right */
+            padding: 10px;
+
+
+            /* ordem dos atalhos top right bottom left */
+            margin: 20px auto 40px auto;
+
+            
+            /* ordem dos atalhos width style color */
+            outline: 5px dashed salmon;
+        }
+        /* ordem do padding: TOP - RIGHT - BOTTOM - LEFT*/
+        a { /* inline-level */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem sao exemplos de box-level, mas os <a href="#">links são exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>
